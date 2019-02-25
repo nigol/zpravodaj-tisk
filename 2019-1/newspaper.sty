@@ -72,13 +72,10 @@
 \renewcommand{\maketitle}{\thispagestyle{empty}
 \vspace*{-40pt}
 \begin{center}
-%{\textgoth{\huge\usefont{LYG}{bigygoth}{m}{n} \@papername}}\hfill%	
 \centerline{\includegraphics[width=1.0\textwidth]{logo-zpravodaj.pdf}}\hfill%
-%\raisebox{12pt}{\textbf{\footnotesize \@paperlocation}}\\
-%{\setlength\fboxsep{3mm}\raisebox{12pt}{\framebox[1.2\width]%{\parbox[c]{1.15in}{\begin{center}\small %\@paperslogan\end{center}}}}}\hfill%
 \vspace*{0.1in}
 \rule[0pt]{\textwidth}{0.5pt}\\
-{\small ČÍSLO \MakeUppercase{\arabic{issue}/\arabic{volume}}} \hfill \hfill {\small\MakeUppercase{\@paperprice}}\\
+{\small ČÍSLO \MakeUppercase{\roman{issue}/\arabic{volume}}} \hfill \hfill {\small\MakeUppercase{\@paperprice}}\\
 \rule[6pt]{\textwidth}{1.2pt}
 \end{center}
 \pagestyle{plain}
@@ -90,7 +87,7 @@
 		\let\@evenfoot\@oddfoot						% empty verso footer
 		\renewcommand\@evenhead
 			{\parbox{\textwidth}{\vspace*{4pt}
-			{\small ČÍSLO \MakeUppercase{\arabic{issue}/\arabic{volume}}}\hfill\normalfont\textbf{\@headername}\quad\hfill\textrm{\thepage}\\
+			{\small ČÍSLO \MakeUppercase{\roman{issue}/\arabic{volume}}}\hfill\normalfont\textbf{\@headername}\quad\hfill\textrm{\thepage}\\
 			\rule{\textwidth}{0.5pt}
 			\vspace*{12pt}}}%
 		\let\@oddhead\@evenhead}
